@@ -7,9 +7,9 @@ function pauseGame()
     // get time from the moment user clicks "exit game" button
     let stopDate = new Date();
     let stopTime = stopDate.getTime();
-
+    
     // subtract end time from start time of entering page (in ms)
-    let millis = 10000000;
+    let millis = stopTime - startTime;
 
     // change ms to minutes
     let time = msConversion(millis);
@@ -20,7 +20,7 @@ function pauseGame()
     if(time >= ''){
         modalBody.replaceWith($("<p class='modal-body'> You've been here for " + time + ". </p>"));
     } else if(time <= 5){
-        modalBody.replaceWith($("<p class='modal-body'> You've only been here for " + time + " minute. </p>"));
+        modalBody.replaceWith($("<p class='modal-body'> You've only been here for " + time + ". </p>"));
     }
 }
 
