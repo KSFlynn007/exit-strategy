@@ -1,15 +1,15 @@
 let startDate = new Date();
 let startTime = startDate.getTime();
 
-
-function pauseGame()
+function pausePiano()
 {
-    // get time from the moment user clicks "exit game" button
+    // get time from the moment user clicks "exit piano" button
     let stopDate = new Date();
     let stopTime = stopDate.getTime();
     
     // subtract end time from start time of entering page (in ms)
     let millis = stopTime - startTime;
+    // let millis = 10000000;
 
     // convert ms
     let time = msConversion(millis);
@@ -21,7 +21,7 @@ function pauseGame()
     modalBody.empty();
 
     if(minutes >= 3){
-        modalBody.replaceWith($("<p class='modal-body'> You've been here for " + time + ". </p>"));
+        modalBody.replaceWith($("<p class='modal-body'> You've already been here for " + time + ". You've gotten so far! </p>"));
     } else if(minutes <= 3){
         modalBody.replaceWith($("<p class='modal-body'> You've only been here for " + time + ". </p>"));
     }
@@ -34,21 +34,21 @@ function msConversion(millis) {
     let min = Math.floor(sec / 60);
     sec -= min * 60;
 
-    sec = '' + sec;
-    sec = ('00' + sec).substring(sec.length);
+    // sec = '' + sec;
+    // sec = ('00' + sec).substring(sec.length);
 
     if (hrs > 0) {
-        let time = hrs + ":" + min + ":" + sec;
+        let time = hrs + " hours, " + min + " minutes and " + sec + " seconds";
         return time;
     }
     else {
-        let time = min + ":" + sec;
+        let time = min + " minutes and " + sec + " seconds";
         return time;
     }
 
 }
 
-function quitGame()
+function quitPiano()
 {
     let modalTitle = $('.modal-title');
     $('.modal-body').remove();
@@ -57,5 +57,5 @@ function quitGame()
     modalTitle.replaceWith($('<h1 class="goodbyeMessage w-100"> Thank you for playing! </h1>'));
 
     // close window:
-    setTimeout('self.close()', 1500);
+    // setTimeout('self.close()', 1500);
 }
