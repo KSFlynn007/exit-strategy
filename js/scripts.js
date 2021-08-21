@@ -11,15 +11,18 @@ function pauseGame()
     // subtract end time from start time of entering page (in ms)
     let millis = stopTime - startTime;
 
-    // change ms to minutes
+    // convert ms
     let time = msConversion(millis);
+
+    // convert minutes only for if statement
+    let minutes = Math.floor(millis / 60000);
 
     let modalBody = $('.modal-body');
     modalBody.empty();
 
-    if(time >= ''){
+    if(minutes >= 3){
         modalBody.replaceWith($("<p class='modal-body'> You've been here for " + time + ". </p>"));
-    } else if(time <= 5){
+    } else if(minutes <= 3){
         modalBody.replaceWith($("<p class='modal-body'> You've only been here for " + time + ". </p>"));
     }
 }
@@ -45,16 +48,14 @@ function msConversion(millis) {
 
 }
 
-
-
 function quitGame()
 {
-    let modalTitle = $('.modal-title')
+    let modalTitle = $('.modal-title');
     $('.modal-body').remove();
     $('.modal-footer').remove();
 
     modalTitle.replaceWith($('<h1 class="goodbyeMessage w-100"> Thank you for playing! </h1>'));
 
     // close window:
-    setTimeout('self.close()', 1500)
+    setTimeout('self.close()', 1500);
 }
