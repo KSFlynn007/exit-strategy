@@ -1,11 +1,12 @@
 # exit strategy
 
 ## dependencies
+
 ##### please check package.json for version control
+
 1. NPM
 2. Bootstrap
 3. jQuery
-4. [TimeMe.js](https://www.npmjs.com/package/timeme.js)
 
 ## prompt
 
