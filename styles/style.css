@@ -1,7 +1,16 @@
+body {
+  background-color: #fbfbfb;
+}
+
 h1 {
-  color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #542019;
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.goodbyeMessage {
+  color: #542019;
 }
 /*# sourceMappingURL=style.css.map */

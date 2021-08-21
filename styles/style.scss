@@ -1,4 +1,19 @@
+$orange: #ca5e21;
+$red: #542019;
+$white: #fbfbfb;
+
+body {
+  background-color: $white;
+}
+
 h1 {
-  color: red;
-  display: flex;
+  color: $red;
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.goodbyeMessage {
+  color: $red;
 }
