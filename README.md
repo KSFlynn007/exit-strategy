@@ -1,9 +1,10 @@
 # exit strategy
 
 ## dependencies
+##### please check package.json for version control
 1. NPM
-2. Bootstrap (this version uses Bootstrap CDN 5.0.2, but an earlier version would be fine too)
-3. jQuery (this version uses jquery-3.6.0.slim.min)
+2. Bootstrap
+3. jQuery
 4. [TimeMe.js](https://www.npmjs.com/package/timeme.js)
 
 ## prompt
