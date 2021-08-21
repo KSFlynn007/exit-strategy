@@ -20,10 +20,10 @@ function pausePiano()
     let modalBody = $('.modal-body');
     modalBody.empty();
 
-    if(minutes >= 3){
-        modalBody.replaceWith($("<p class='modal-body'> You've already been here for " + time + ". You've gotten so far! </p>"));
-    } else if(minutes <= 3){
-        modalBody.replaceWith($("<p class='modal-body'> You've only been here for " + time + ". </p>"));
+    if(minutes >= 1){
+        modalBody.replaceWith($("<p class='modal-body'> You've already been here for " + time + ". You've been playing so well! </p>"));
+    } else if(minutes <= 1){
+        modalBody.replaceWith($("<p class='modal-body'> You've only been here for " + time + ". You've barely hit a note! </p>"));
     }
 }
 
