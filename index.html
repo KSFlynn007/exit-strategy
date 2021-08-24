@@ -18,104 +18,123 @@
 
     <button onclick="playPiano()">Start the Piano</button>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="audioGSharp">
-                G#
+            <li class="list-group-item" id="sat-FLow">
+                F (Low)
             </li>
-            <li class="list-group-item" id="audioA">
-                A
+            <li class="list-group-item" id="sat-GLow">
+                G (Low)
             </li>
-            <li class="list-group-item" id="audioBb">
-                Bb
+            <li class="list-group-item" id="sat-ASharp">
+                A#
             </li>
-            <li class="list-group-item" id="audioB">
-                B
+            <li class="list-group-item" id="sat-GSharpMLow">
+                G#M (Low)
             </li>
-            <li class="list-group-item" id="audioC">
+            <li class="list-group-item" id="sat-CSharpM">
+                C# Major
+            </li>
+            <li class="list-group-item" id="sat-DSharp">
+                DSharp
+            </li>
+            <li class="list-group-item" id="sat-C">
                 C
             </li>
-            <li class="list-group-item" id="audioCSharp">
-                C#
-            </li>
-            <li class="list-group-item" id="audioD">
-                D
-            </li>
-            <li class="list-group-item" id="audioEb">
-                Eb
-            </li>
-            <li class="list-group-item" id="audioE">
-                E
-            </li>
-            <li class="list-group-item" id="audioF">
-                F
-            </li>
-            <li class="list-group-item" id="audioFSharp">
-                F#
-            </li>
-            <li class="list-group-item" id="audioG">
+            <li class="list-group-item" id="sat-G">
                 G
             </li>
+            <li class="list-group-item" id="sat-Em">
+                E Major
+            </li>
+            <li class="list-group-item" id="sat-F">
+                F
+            </li>
+            <li class="list-group-item" id="sat-GSharpM">
+                G# Major
+            </li>
+            <li class="list-group-item" id="sat-GM">
+                G Major
+            </li>
+            <li class="list-group-item" id="sat-A">
+                A
+            </li>
+            <li class="list-group-item" id="sat-Cm">
+                C Major
+            </li>
+
+
+
         </ul>
     </div>
 
-    <audio id="GSharp" preload="auto">
-        <source src="/sounds/piano-g_GSharp_major.wav">
+    <audio id="FLow" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-FLow.wav">
         </source>
         This browser does not support the HTML5 audio tag.
     </audio>
-    <audio id="A" preload="auto">
-        <source src="/sounds/piano-a_A_major.wav">
+    <audio id="GLow" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-GLow.wav">
         </source>
         This browser does not support the HTML5 audio tag.
     </audio>
-    <audio id="Bb" preload="auto">
-        <source src="/sounds/piano-bb_A_major.wav">
+    <audio id="ASharp" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-ASharp.wav">
         </source>
         This browser does not support the HTML5 audio tag.
     </audio>
-    <audio id="B" preload="auto">
-        <source src="/sounds/piano-b_B_major.wav">
+    <audio id="GSharpmLow" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-GSharpmLow.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="CSharpm" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-CSharpm.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="DSharp" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-DSharp.wav">
         </source>
         This browser does not support the HTML5 audio tag.
     </audio>
     <audio id="C" preload="auto">
-        <source src="/sounds/piano-c_C_major.wav">
-        </source>
-        This browser does not support the HTML5 audio tag.
-    </audio>
-    <audio id="CSharp" preload="auto">
-        <source src="/sounds/piano-c_CSharp_major.wav">
-        </source>
-        This browser does not support the HTML5 audio tag.
-    </audio>
-    <audio id="D" preload="auto">
-        <source src="/sounds/piano-d_D_major.wav">
-        </source>
-        This browser does not support the HTML5 audio tag.
-    </audio>
-    <audio id="Eb" preload="auto">
-        <source src="/sounds/piano-eb_D_major.wav">
-        </source>
-        This browser does not support the HTML5 audio tag.
-    </audio>
-    <audio id="E" preload="auto">
-        <source src="/sounds/piano-e_E_major.wav">
-        </source>
-        This browser does not support the HTML5 audio tag.
-    </audio>
-    <audio id="F" preload="auto">
-        <source src="/sounds/piano-f_F_major.wav">
-        </source>
-        This browser does not support the HTML5 audio tag.
-    </audio>
-    <audio id="FSharp" preload="auto">
-        <source src="/sounds/piano-f_FSharp_major.wav">
+        <source src="/spaceAndTime-wav/spaceAndTime-C.wav">
         </source>
         This browser does not support the HTML5 audio tag.
     </audio>
     <audio id="G" preload="auto">
-        <source src="/sounds/piano-g_G_major.wav">
+        <source src="/spaceAndTime-wav/spaceAndTime-G.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="Em" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-Em.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="F" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-F.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="GSharpm" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-GSharpm.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="Gm" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-Gm.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="A" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-A.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="Cm" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-Cm.wav">
         </source>
         This browser does not support the HTML5 audio tag.
     </audio>
@@ -143,7 +162,7 @@
 
     <footer>
         <p>music keyboard by Kaylen Yul Lee from the Noun Project</p>
-        <p>sounds from <a href="https://samplefocus.com/">Sample</a> </p>
+        <p>Samples from <a href="https://www.noiiz.com/creators/110">Dot</a></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"

@@ -1,7 +1,3 @@
-// notes in order
-// G#, A, Bb, B, C, C#, D, Eb, E, F, F#, G
-// 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 221  
-
 function playPiano()
 {
     function cloneAndPlay(audioNode)
@@ -14,50 +10,72 @@ function playPiano()
  
         var key = (event.keyCode ? event.keyCode : event.which);
 
-        if (key == '65'){
-            cloneAndPlay(GSharp);
+        // LOW NOTE
+
+        if(key == '65'){
+            // a
+            cloneAndPlay(FLow)
         }
-        if (key == '83'){
-            cloneAndPlay(A);
+        if(key == '87'){
+            // w
+            cloneAndPlay(GLow)
         }
-        if (key == '68'){
-            cloneAndPlay(Bb);
+        if(key == '83'){
+            // s
+            cloneAndPlay(ASharp)
         }
-        if (key == '70'){
-            cloneAndPlay(B);
+        if(key == '69'){
+            // e
+            cloneAndPlay(GSharpmLow)
         }
-        if (key == '71'){
-            cloneAndPlay(C);
+        if(key == '68'){
+            // d
+            cloneAndPlay(CSharpm)
         }
-        if (key == '72'){
-            cloneAndPlay(CSharp);
+        if(key == '82'){
+            // r
+            cloneAndPlay(DSharp)
         }
-        if (key == '74'){
-            cloneAndPlay(D)
+        if(key == '70'){
+            // f
+            cloneAndPlay(C)
         }
-        if (key == '75'){
-            cloneAndPlay(Eb)
+
+
+        // HI NOTE
+
+        if(key == '72'){
+            // h
+            cloneAndPlay(G)
         }
-        if (key == '76'){
-            cloneAndPlay(E)
+        if(key == '85'){
+            // u
+            cloneAndPlay(Em)
         }
-        if (key == '186'){
+        if(key == '74'){
+            // j
             cloneAndPlay(F)
         }
-        if (key == '222'){
-            cloneAndPlay(FSharp)
+        if(key == '73'){
+            // i
+            cloneAndPlay(GSharpm)
         }
-        if (key == '221'){
-            cloneAndPlay(G)
+        if(key == '75'){
+            // k
+            cloneAndPlay(Gm)
+        }
+        if(key == '79'){
+            // o
+            cloneAndPlay(A)
+        }
+        if(key == '76'){
+            // l
+            cloneAndPlay(Cm)
         }
     
     });
    
     
 }
-
-
-
-
 
 
