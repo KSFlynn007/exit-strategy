@@ -3,12 +3,12 @@
 // 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 221  
 
 function playPiano()
+
 {
     window.addEventListener('keydown', checkKeyPress, false);
 
     function checkKeyPress(key)
     {
-        const soundItem = document.querySelector('.list-group-item');
         if(key.keyCode == "65"){
             // highlight list item
             document.querySelector('#audioGSharp').play();
