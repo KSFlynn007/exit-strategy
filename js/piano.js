@@ -3,42 +3,58 @@
 // 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 221  
 
 function playPiano()
-
 {
-    window.addEventListener('keydown', checkKeyPress, false);
-
-    function checkKeyPress(key)
+    function cloneAndPlay(audioNode)
     {
-        if(key.keyCode == "65"){
-            // highlight list item
-            document.querySelector('#audioGSharp').play();
-        } else if (key.keyCode == "83"){
-            document.querySelector('#audioA').play();
-        } else if (key.keyCode == "68"){
-            document.querySelector('#audioBb').play();
-        } else if (key.keyCode == "70"){
-            document.querySelector('#audioB').play();
-        } else if (key.keyCode =="71"){
-            document.querySelector('#audioC').play();
-        } else if (key.keyCode == "72"){
-            document.querySelector('#audioCSharp').play();
-        } else if (key.keyCode == "74"){
-            document.querySelector('#audioD').play();
-        } else if (key.keyCode == "75"){
-            document.querySelector('#audioEb').play();
-        } else if (key.keyCode == "76"){
-            document.querySelector('#audioE').play();
-        } else if (key.keyCode == "186"){
-            document.querySelector('#audioF').play();
-        } else if(key.keyCode == "222"){
-            document.querySelector(`#audioFSharp`).play();
-        } else if(key.keyCode == "221"){
-            document.querySelector('#audioG').play();
-        }
+        var clone = audioNode.cloneNode(true);
+        clone.play();
     }
 
-}
+    $(document).keydown(function(event) {
+ 
+        var key = (event.keyCode ? event.keyCode : event.which);
 
+        if (key == '65'){
+            cloneAndPlay(GSharp);
+        }
+        if (key == '83'){
+            cloneAndPlay(A);
+        }
+        if (key == '68'){
+            cloneAndPlay(Bb);
+        }
+        if (key == '70'){
+            cloneAndPlay(B);
+        }
+        if (key == '71'){
+            cloneAndPlay(C);
+        }
+        if (key == '72'){
+            cloneAndPlay(CSharp);
+        }
+        if (key == '74'){
+            cloneAndPlay(D)
+        }
+        if (key == '75'){
+            cloneAndPlay(Eb)
+        }
+        if (key == '76'){
+            cloneAndPlay(E)
+        }
+        if (key == '186'){
+            cloneAndPlay(F)
+        }
+        if (key == '222'){
+            cloneAndPlay(FSharp)
+        }
+        if (key == '221'){
+            cloneAndPlay(G)
+        }
+    
+    });
+   
+    
+}
 
 
 

@@ -14,67 +14,111 @@
     <header>
         <h1>Piano</h1>
     </header>
-
-    <button><a href="/v2.html">V2</a></button>
-
     <img src="/img/laptop-keys.jpg" alt="">
 
     <button onclick="playPiano()">Start the Piano</button>
 
-
     <div class="card" style="width: 18rem;">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioGSharp">
                 G#
-                <audio src="/sounds/piano-g_GSharp_major.wav" id="audioGSharp"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioA">
                 A
-                <audio src="/sounds/piano-a_A_major.wav" id="audioA"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioBb">
                 Bb
-                <audio src="/sounds/piano-bb_A_major.wav" id="audioBb"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioB">
                 B
-                <audio src="/sounds/piano-b_B_major.wav" id="audioB"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioC">
                 C
-                <audio src="/sounds/piano-c_C_major.wav" id="audioC"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioCSharp">
                 C#
-                <audio src="/sounds/piano-c_CSharp_major.wav" id="audioCSharp"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioD">
                 D
-                <audio src="/sounds/piano-d_D_major.wav" id="audioD"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioEb">
                 Eb
-                <audio src="/sounds/piano-eb_D_major.wav" id="audioEb"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioE">
                 E
-                <audio src="/sounds/piano-e_E_major.wav" id="audioE"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioF">
                 F
-                <audio src="/sounds/piano-f_F_major.wav" id="audioF"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioFSharp">
                 F#
-                <audio src="/sounds/piano-f_FSharp_major.wav" id="audioFSharp"></audio>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="audioG">
                 G
-                <audio src="/sounds/piano-g_G_major.wav" id="audioG"></audio>
             </li>
-
         </ul>
     </div>
+
+    <audio id="GSharp" preload="auto">
+        <source src="/sounds/piano-g_GSharp_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="A" preload="auto">
+        <source src="/sounds/piano-a_A_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="Bb" preload="auto">
+        <source src="/sounds/piano-bb_A_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="B" preload="auto">
+        <source src="/sounds/piano-b_B_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="C" preload="auto">
+        <source src="/sounds/piano-c_C_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="CSharp" preload="auto">
+        <source src="/sounds/piano-c_CSharp_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="D" preload="auto">
+        <source src="/sounds/piano-d_D_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="Eb" preload="auto">
+        <source src="/sounds/piano-eb_D_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="E" preload="auto">
+        <source src="/sounds/piano-e_E_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="F" preload="auto">
+        <source src="/sounds/piano-f_F_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="FSharp" preload="auto">
+        <source src="/sounds/piano-f_FSharp_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="G" preload="auto">
+        <source src="/sounds/piano-g_G_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exitConfirm" onclick="pausePiano()">
