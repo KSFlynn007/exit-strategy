@@ -1,3 +1,72 @@
+let drums = document.querySelector("#drums");
+let guitar = document.querySelector("#guitar");
+let cascade = document.querySelector("#cascadeSky");
+let hiLo = document.querySelector("#hiLoBase");
+let cloudlines = document.querySelector("#cloudlines");
+
+function playDrums()
+{
+    drums.play();
+    drums.volume = 0.6;
+    // update inner text to "Playing Hi Lo Base?"
+}
+
+function stopDrums()
+{
+    drums.pause();
+    drums.currentTime = 0;
+}
+
+function playGuitar()
+{
+    guitar.play();
+    guitar.volume = 0.5;
+}
+
+function stopGuitar()
+{
+    guitar.pause();
+    guitar.currentTime = 0;
+}
+
+function playCascadeSky()
+{
+    cascade.play();
+    cascade.volume = 0.6;
+}
+
+function stopCascadeSky()
+{
+    cascade.pause();
+    cascade.currentTime = 0;
+}
+
+function playHiLoBase()
+{
+    hiLo.play();
+    hiLo.volume = 0.7;
+}
+
+function stopHiLoBase()
+{
+    hiLo.pause();
+    hiLo.currentTime = 0;
+}
+
+function playCloudlines()
+{
+    cloudlines.play();
+    cloudlines.volume = 0.5;
+}
+
+function stopCloudlines()
+{
+    cloudlines.pause();
+    cloudlines.currentTime = 0;
+}
+
+
+
 function playPiano()
 {
     function cloneAndPlay(audioNode)
@@ -11,7 +80,6 @@ function playPiano()
         var key = (event.keyCode ? event.keyCode : event.which);
 
         // LOW NOTE
-
         if(key == '65'){
             // a
             $("#sat-FLow").addClass("bg-dark").delay(1000).queue(function(){
