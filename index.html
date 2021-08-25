@@ -63,10 +63,10 @@
                 C Major
             </li>
 
-
-
         </ul>
     </div>
+
+    <!-- add in beats with audio attribute "loop='true'" -->
 
     <audio id="FLow" preload="auto">
         <source src="/spaceAndTime-wav/spaceAndTime-FLow.wav">
@@ -139,6 +139,50 @@
         This browser does not support the HTML5 audio tag.
     </audio>
 
+    <!-- backtracks -->
+    <container class="simple-backing">
+        <button class="btn btn-dark" onclick="playDrums()">Start Drum Backing</button>
+        <button class="btn btn-dark" onclick="stopDrums()">Stop Drums</button>
+        <button class="btn btn-dark" onclick="playGuitar()">Start Guitar Backing</button>
+        <button class="btn btn-dark" onclick="stopGuitar()">Stop Guitar</button>
+    </container>
+
+    <container class="complex-backing">
+        <button class="btn btn-success" onclick="playCascadeSky()">Start Cascade Sky</button>
+        <button class="btn btn-success" onclick="stopCascadeSky()">Stop Cascade Sky</button>
+        <button class="btn btn-success" onclick="playHiLoBase()">Start Hi Lo Base</button>
+        <button class="btn btn-success" onclick="stopHiLoBase()">Stop Hi Lo Base</button>
+        <button class="btn btn-success" onclick="playCloudlines()">Start Cloudlines</button>
+        <button class="btn btn-success" onclick="stopCloudlines()">Stop Cloudlines</button>
+    </container>
+
+    <audio id="drums" preload="auto" loop="true">
+        <source src="/backtracks/laid-back-drums_92bpm_C_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="guitar" preload="auto" loop="true">
+        <source src="/backtracks/emotional-tape-acoustic-guitar_96bpm_F_major.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="cascadeSky" preload="auto" loop="true">
+        <source src="/backtracks/90ASharp_cascadeSky.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="hiLoBase" preload="auto" loop="true">
+        <source src="/backtracks/96FSharp_hiLoBase.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    <audio id="cloudlines" preload="auto" loop="true">
+        <source src="/backtracks/100Bm_cloudlines.wav">
+        </source>
+        This browser does not support the HTML5 audio tag.
+    </audio>
+    
+
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exitConfirm" onclick="pausePiano()">
         Exit Piano
@@ -162,7 +206,7 @@
 
     <footer>
         <p>music keyboard by Kaylen Yul Lee from the Noun Project</p>
-        <p>Samples from <a href="https://www.noiiz.com/creators/110">Dot</a></p>
+        <p>Samples from <a href="https://www.noiiz.com" target="_blank">Noiiz</a></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
@@ -172,7 +216,7 @@
         crossorigin="anonymous"></script>
 
     <script src="/js/scripts.js"></script>
-    <script src="/js/piano.js"></script>
+    <script src="/js/music.js"></script>
 </body>
 
 </html>
