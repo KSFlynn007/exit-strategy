@@ -1,6 +1,22 @@
-$red: red;
-$teal: rgb(0, 242, 255);
+$theme-colors: (
+  "primary": #5a189a,
+  "secondary": #9d4edd,
+  "info": #fdc64e,
+  "warning": #ff6d00,
+  "light": #fff7eb,
+  "dark": #240046,
+);
 
-body {
-  background: $teal;
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.text-end {
+  font-size: 10px;
 }

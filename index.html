@@ -10,15 +10,15 @@
     <title>Piano</title>
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container">
-        <h1>Piano Portal</h1>
+        <h1 class="text-dark py-3 text-center">Piano Portal</h1>
         <p class="intro">Welcome to the Piano Portal, this 14 complex note piano is controlled completely by your computer's keyboard.
             See the legend below for which keys control the notes, starting from the <em>"A"</em> as the lowest note and moving up in a zig-zag 
             pattern to the highest note on the <em>"L</em> key.
         </p>
 
-        <p class="intro"><span style="font-weight: bold;">Disclaimer:</span> As a non-musical developer, the piano keys below are only an approximation for the equivalent note, just to
+        <p class="intro"><span style="font-weight: bold;" class="text-warning">Disclaimer:</span> As a non-musical developer, the piano keys below are only an approximation for the equivalent note, just to
             give you a guide to what you've hit.</p>
 
         <p class="intro">If you want to add any accompanying music or beats to your piano, pick out one of the backtrack buttons at the bottom of the page.
@@ -27,16 +27,16 @@
     </div>
 
     <div class="container my-2 mb-5">
-            <img src="src/img/laptop-keys.jpg" alt="computerKey-guide" class="mx-auto d-block">
+            <img src="src/img/laptop-keys.jpg" alt="computerKey-guide" class="mx-auto d-block border border-dark">
             
-            <p>Click the "Start Piano" button below to begin!</p>
+            <p class="m-4 text-center">Click the "Start Piano" button below to begin!</p>
             <div class="d-grid">
-                <button class="btn btn-primary" onclick="playPiano()">Start the Piano</button>
+                <button class="btn btn-secondary border-dark" onclick="playPiano()">Start Piano</button>
             </div>
     </div>
 
     <div class="container">
-        <div class="row justify-content-around">
+        <div class="row">
             <div class="col-4">
                 <div class="card pt-2 my-2 border-dark" style="width: 18rem;" id="sat-FLow">
                     <h5 class="card-title text-center">
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-around">
+        <div class="row">
             <div class="col-4">
                 <div class="card pt-2 my-2 border-dark" style="width: 18rem;" id="sat-GLow">
                     <h5 class="card-title text-center">
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-around">
+        <div class="row">
             <div class="col-4">
                 <div class="card pt-2 my-2 border-dark" style="width: 18rem;" id="sat-GSharpMLow">
                     <h5 class="card-title text-center">
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-around">
+        <div class="row">
             <div class="col-4">
                 <div class="card pt-2 my-2 border-dark" style="width: 18rem;" id="sat-ASharp">
                     <h5 class="card-title text-center">
@@ -100,7 +100,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-around">
+        <div class="row">
             <div class="col-4">
                 <div class="card pt-2 my-2 border-dark" style="width: 18rem;" id="sat-CSharpM">
                     <h5 class="card-title text-center">
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-around">
+        <div class="row">
             <div class="col-4">
                 <div class="card pt-2 my-2 border-dark" style="width: 18rem;" id="sat-DSharp">
                     <h5 class="card-title text-center">
@@ -132,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-around">
+        <div class="row">
             <div class="col-4">
                 <div class="card pt-2 my-2 border-dark" style="width: 18rem;" id="sat-C">
                     <h5 class="card-title text-center">
@@ -226,24 +226,24 @@
     <!-- backtracks -->
     <div class="container mt-5 d-flex justify-content-center">
             <div class="row m-3">
-                <button class="btn btn-dark border-light mb-1" onclick="playDrums()">Start Drums</button>
-                <button class="btn btn-danger" onclick="stopDrums()">Stop Drums</button>
+                <button id="playDrums" class="btn btn-info border-dark mb-1" onclick="playDrums()">Start Drums</button>
+                <button class="btn btn-warning border-dark" onclick="stopDrums()">Stop Drums</button>
             </div>
             <div class="row m-3">
-                <button class="btn btn-dark border-dark mb-1" onclick="playGuitar()">Start Guitars</button>
-                <button class="btn btn-danger" onclick="stopGuitar()">Stop Guitar</button>
+                <button id="playGuitar" class="btn btn-info border-dark mb-1" onclick="playGuitar()">Start Guitars</button>
+                <button class="btn btn-warning border-dark" onclick="stopGuitar()">Stop Guitar</button>
             </div>
             <div class="row m-3">
-                <button class="btn btn-light border-dark mb-1" onclick="playCascadeSky()">Start Cascade Sky</button>
-                <button class="btn btn-danger" onclick="stopCascadeSky()">Stop Cascade Sky</button>
+                <button id="playCascadeSky" class="btn btn-info border-dark mb-1" onclick="playCascadeSky()">Start Cascade Sky</button>
+                <button class="btn btn-warning border-dark" onclick="stopCascadeSky()">Stop Cascade Sky</button>
             </div>
             <div class="row m-3">
-                <button class="btn btn-light border-dark mb-1" onclick="playHiLoBase()">Start Hi Lo Base</button>
-                <button class="btn btn-danger" onclick="stopHiLoBase()">Stop Hi Lo Base</button>
+                <button id="playHiLoBase" class="btn btn-info border-dark mb-1" onclick="playHiLoBase()">Start Hi Lo Base</button>
+                <button class="btn btn-warning border-dark" onclick="stopHiLoBase()">Stop Hi Lo Base</button>
             </div>
             <div class="row m-3">
-                <button class="btn btn-light border-dark mb-1" onclick="playCloudlines()">Start Cloudlines</button>
-                <button class="btn btn-danger" onclick="stopCloudlines()">Stop Cloudlines</button>
+                <button id="playCloudlines" class="btn btn-info border-dark mb-1" onclick="playCloudlines()">Start Cloudlines</button>
+                <button class="btn btn-warning border-dark" onclick="stopCloudlines()">Stop Cloudlines</button>
             </div>
     </div>
 
@@ -278,7 +278,7 @@
     <!-- Button trigger modal -->
     <div class="container my-2">
         <div class="d-grid">
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exitConfirm" onclick="pausePiano()">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exitConfirm" onclick="pausePiano()">
                 Exit Piano
             </button>
         </div>
@@ -300,8 +300,8 @@
         </div>
     </div>
 
-    <div class="container">
-        <p>Samples from <a href="https://www.noiiz.com" target="_blank">Noiiz</a> and <a href="https://samplefocus.com/">Sample Focus</a></p>
+    <div class="container mt-5 text-end">
+        <p>Samples from <a href="https://www.noiiz.com" target="_blank" class="link-secondary">Noiiz</a> and <a href="https://samplefocus.com/" class="link-secondary">Sample Focus</a></p>
         <p>Keyboard Icon by Kaylen Yul Lee from the Noun Project</p>
     </div>
 

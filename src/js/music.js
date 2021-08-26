@@ -8,61 +8,82 @@ function playDrums()
 {
     drums.play();
     drums.volume = 0.6;
-    // update inner text to "Playing Hi Lo Base?"
+    $("#playDrums").html("Playing");
+    $("#playDrums").addClass("bg-dark").addClass("text-light");
+
 }
 
 function stopDrums()
 {
     drums.pause();
     drums.currentTime = 0;
+    $("#playDrums").html("Start Drums");
+    $("#playDrums").removeClass("bg-dark").removeClass("text-light");
+
 }
 
 function playGuitar()
 {
     guitar.play();
     guitar.volume = 0.5;
+    $("#playGuitar").html("Playing");
+    $("#playGuitar").addClass("bg-dark").addClass("text-light");
 }
 
 function stopGuitar()
 {
     guitar.pause();
     guitar.currentTime = 0;
+    $("#playGuitar").html("Play Guitar");
+    $("#playGuitar").removeClass("bg-dark").removeClass("text-light");
 }
 
 function playCascadeSky()
 {
     cascade.play();
     cascade.volume = 0.6;
+    $("#playCascadeSky").html("Playing");
+    $("#playCascadeSky").addClass("bg-dark").addClass("text-light");
 }
 
 function stopCascadeSky()
 {
     cascade.pause();
     cascade.currentTime = 0;
+    $("#playCascadeSky").html("Play Cascase Sky");
+    $("#playCascadeSky").removeClass("bg-dark").removeClass("text-light");
 }
 
 function playHiLoBase()
 {
     hiLo.play();
     hiLo.volume = 0.7;
+    $("#playHiLoBase").html("Playing");
+    $("#playHiLoBase").addClass("bg-dark").addClass("text-light");
 }
 
 function stopHiLoBase()
 {
     hiLo.pause();
     hiLo.currentTime = 0;
+    $("#playHiLoBase").html("Play Hi Lo Base");
+    $("#playHiLoBase").removeClass("bg-dark").removeClass("text-light");
 }
 
 function playCloudlines()
 {
     cloudlines.play();
     cloudlines.volume = 0.5;
+    $("#playCloudlines").html("Playing");
+    $("#playCloudlines").addClass("bg-dark").addClass("text-light");
 }
 
 function stopCloudlines()
 {
     cloudlines.pause();
     cloudlines.currentTime = 0;
+    $("#playCloudlines").html("Play Cloudlines");
+    $("#playCloudlines").removeClass("bg-dark").removeClass("text-light");
 }
 
 
