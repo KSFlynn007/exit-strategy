@@ -11,62 +11,112 @@
 </head>
 
 <body>
-    <header>
-        <h1>Piano</h1>
-    </header>
-    <img src="/img/laptop-keys.jpg" alt="computerKey-guide">
+    <div class="container">
+        <h1>Piano Portal</h1>
+        <p class="intro">Welcome to the Piano Portal, this 14 complex note piano is controlled completely by your computer's keyboard.
+            See the legend below for which keys control the notes, starting from the <em>"A"</em> as the lowest note and moving up in a zig-zag 
+            pattern to the highest note on the <em>"L</em> key.
+        </p>
 
-    <button onclick="playPiano()">Start the Piano</button>
+        <p class="intro"><span style="font-weight: bold;">Disclaimer:</span> As a non-musical developer, the piano keys below are only an approximation for the equivalent note, just to
+            give you a guide to what you've hit.</p>
 
-    <div class="card">
-        <ul class="list-group m-3" style="width: 18rem;">
-            <li class="list-group-item mb-3" id="sat-FLow">
-                F (Low)
-            </li>
-            <li class="list-group-item mb-3" id="sat-GLow">
-                G (Low)
-            </li>
-            <li class="list-group-item mb-3" id="sat-ASharp">
-                A#
-            </li>
-            <li class="list-group-item mb-3" id="sat-GSharpMLow">
-                G#M (Low)
-            </li>
-            <li class="list-group-item mb-3" id="sat-CSharpM">
-                C# Major
-            </li>
-            <li class="list-group-item mb-3" id="sat-DSharp">
-                DSharp
-            </li>
-            <li class="list-group-item mb-3" id="sat-C">
-                C
-            </li>
-            <li class="list-group-item mb-3" id="sat-G">
-                G
-            </li>
-            <li class="list-group-item mb-3" id="sat-Em">
-                E Major
-            </li>
-            <li class="list-group-item mb-3" id="sat-F">
-                F
-            </li>
-            <li class="list-group-item mb-3" id="sat-GSharpM">
-                G# Major
-            </li>
-            <li class="list-group-item mb-3" id="sat-GM">
-                G Major
-            </li>
-            <li class="list-group-item mb-3" id="sat-A">
-                A
-            </li>
-            <li class="list-group-item mb-3" id="sat-Cm">
-                C Major
-            </li>
+        <p class="intro">If you want to add any accompanying music or beats to your piano, pick out one of the backtrack buttons at the bottom of the page.
+            They play in a continuous loop at 50% volume to your piano!
+        </p>
 
-        </ul>
     </div>
 
-    <!-- add in beats with audio attribute "loop='true'" -->
+    <div class="container">
+            <img src="/img/laptop-keys.jpg" alt="computerKey-guide" class="mx-auto d-block">
+            
+            <p>Click the "Start Piano" button below to begin!</p>
+            <button class="btn btn-primary" onclick="playPiano()">Start the Piano</button>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <!-- LOW KEYS -->
+            <div class="col">
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-FLow">
+                    <h5 class="card-title text-center">
+                        F2
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-GLow">
+                    <h5 class="card-title text-center">
+                        G2
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-GSharpMLow">
+                    <h5 class="card-title text-center">
+                        G#2
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-ASharp">
+                    <h5 class="card-title text-center">
+                        A#3
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-CSharpM">
+                    <h5 class="card-title text-center">
+                        C#3
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-DSharp">
+                    <h5 class="card-title text-center">
+                        G#4
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-C">
+                    <h5 class="card-title text-center">
+                        C4
+                    </h5>
+                </div>
+            </div>
+            <div class="col">
+                <!-- HI KEYS -->
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-G">
+                    <h5 class="card-title text-center">
+                        G4
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-Em">
+                    <h5 class="card-title text-center">
+                        E4
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-F">
+                    <h5 class="card-title text-center">
+                        F4
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-GSharpM">
+                    <h5 class="card-title text-center">
+                        G#5
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-GM">
+                    <h5 class="card-title text-center">
+                        G5
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-A">
+                    <h5 class="card-title text-center">
+                        A5
+                    </h5>
+                </div>
+                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-Cm">
+                    <h5 class="card-title text-center">
+                        C6
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <audio id="FLow" preload="auto">
         <source src="/spaceAndTime-wav/spaceAndTime-FLow.wav">
@@ -78,13 +128,13 @@
         </source>
         This browser does not support the HTML5 audio tag.
     </audio>
-    <audio id="ASharp" preload="auto">
-        <source src="/spaceAndTime-wav/spaceAndTime-ASharp.wav">
+    <audio id="GSharpmLow" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-GSharpmLow.wav">
         </source>
         This browser does not support the HTML5 audio tag.
     </audio>
-    <audio id="GSharpmLow" preload="auto">
-        <source src="/spaceAndTime-wav/spaceAndTime-GSharpmLow.wav">
+    <audio id="ASharp" preload="auto">
+        <source src="/spaceAndTime-wav/spaceAndTime-ASharp.wav">
         </source>
         This browser does not support the HTML5 audio tag.
     </audio>
@@ -140,21 +190,38 @@
     </audio>
 
     <!-- backtracks -->
-    <container class="simple-backing">
-        <button class="btn btn-dark" onclick="playDrums()">Start Drum Backing</button>
-        <button class="btn btn-dark" onclick="stopDrums()">Stop Drums</button>
-        <button class="btn btn-dark" onclick="playGuitar()">Start Guitar Backing</button>
-        <button class="btn btn-dark" onclick="stopGuitar()">Stop Guitar</button>
-    </container>
-
-    <container class="complex-backing">
-        <button class="btn btn-success" onclick="playCascadeSky()">Start Cascade Sky</button>
-        <button class="btn btn-success" onclick="stopCascadeSky()">Stop Cascade Sky</button>
-        <button class="btn btn-success" onclick="playHiLoBase()">Start Hi Lo Base</button>
-        <button class="btn btn-success" onclick="stopHiLoBase()">Stop Hi Lo Base</button>
-        <button class="btn btn-success" onclick="playCloudlines()">Start Cloudlines</button>
-        <button class="btn btn-success" onclick="stopCloudlines()">Stop Cloudlines</button>
-    </container>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-dark" onclick="playDrums()">Start Drum Backing</button>
+                <button class="btn btn-dark" onclick="stopDrums()">Stop Drums</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-dark" onclick="playGuitar()">Start Guitar Backing</button>
+                <button class="btn btn-dark" onclick="stopGuitar()">Stop Guitar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success" onclick="playCascadeSky()">Start Cascade Sky</button>
+                <button class="btn btn-success" onclick="stopCascadeSky()">Stop Cascade Sky</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success" onclick="playHiLoBase()">Start Hi Lo Base</button>
+                <button class="btn btn-success" onclick="stopHiLoBase()">Stop Hi Lo Base</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success" onclick="playCloudlines()">Start Cloudlines</button>
+                <button class="btn btn-success" onclick="stopCloudlines()">Stop Cloudlines</button>
+            </div>
+        </div>
+    </div>
 
     <audio id="drums" preload="auto" loop="true">
         <source src="/backtracks/laid-back-drums_92bpm_C_major.wav">
@@ -184,9 +251,11 @@
     
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exitConfirm" onclick="pausePiano()">
-        Exit Piano
-    </button>
+    <div class="container">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exitConfirm" onclick="pausePiano()">
+            Exit Piano
+        </button>
+    </div>
     
     <!-- Modal -->
     <div class="modal fade" id="exitConfirm" tabindex="-1" aria-labelledby="exitConfirmLabel" aria-hidden="true">
@@ -204,10 +273,10 @@
         </div>
     </div>
 
-    <footer>
-        <p>music keyboard by Kaylen Yul Lee from the Noun Project</p>
-        <p>Samples from <a href="https://www.noiiz.com" target="_blank">Noiiz</a></p>
-    </footer>
+    <div class="container">
+        <p>Samples from <a href="https://www.noiiz.com" target="_blank">Noiiz</a> and <a href="https://samplefocus.com/">Sample Focus</a></p>
+        <p>Keyboard Icon by Kaylen Yul Lee from the Noun Project</p>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>

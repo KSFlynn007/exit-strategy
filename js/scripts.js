@@ -57,5 +57,5 @@ function quitPiano()
     modalTitle.replaceWith($('<h1 class="goodbyeMessage w-100"> Thank you for playing! </h1>'));
 
     // close window:
-    // setTimeout('self.close()', 1500);
+    setTimeout('self.close()', 1500);
 }

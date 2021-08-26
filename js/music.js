@@ -102,16 +102,6 @@ function playPiano()
         }
         if(key == '83'){
             // s
-            $("#sat-ASharp").addClass("bg-dark").delay(1000).queue(function(){
-                $(this).removeClass("bg-dark").dequeue();
-            });
-            $("#sat-ASharp").addClass("text-white").delay(60).queue(function(){
-                $(this).removeClass("text-white").dequeue();
-            });
-            cloneAndPlay(ASharp)
-        }
-        if(key == '69'){
-            // e
             $("#sat-GSharpMLow").addClass("bg-dark").delay(1000).queue(function(){
                 $(this).removeClass("bg-dark").dequeue();
             });
@@ -119,6 +109,16 @@ function playPiano()
                 $(this).removeClass("text-white").dequeue();
             });
             cloneAndPlay(GSharpmLow)
+        }
+        if(key == '69'){
+            // e
+            $("#sat-ASharp").addClass("bg-dark").delay(1000).queue(function(){
+                $(this).removeClass("bg-dark").dequeue();
+            });
+            $("#sat-ASharp").addClass("text-white").delay(60).queue(function(){
+                $(this).removeClass("text-white").dequeue();
+            });
+            cloneAndPlay(ASharp)
         }
         if(key == '68'){
             // d

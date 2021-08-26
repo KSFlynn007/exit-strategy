@@ -1,5 +1,5 @@
-$orange: #ca5e21;
-$red: #542019;
+$mid: #ca5e21;
+$dark: #542019;
 $white: #fbfbfb;
 
 * {
@@ -8,11 +8,11 @@ $white: #fbfbfb;
 }
 
 body {
-  background-color: $white;
+  background-color: $mid;
 }
 
 h1 {
-  color: $red;
+  color: $dark;
 }
 
 // EXIT
@@ -21,7 +21,7 @@ h1 {
 }
 
 .goodbyeMessage {
-  color: $red;
+  color: $dark;
 }
 
 .counter {
