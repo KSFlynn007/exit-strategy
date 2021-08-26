@@ -38,38 +38,38 @@
     <div class="container">
         <div class="row">
             <!-- LOW KEYS -->
-            <div class="col">
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-FLow">
+            <div class="col mb-3">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-FLow">
                     <h5 class="card-title text-center">
                         F2
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-GLow">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-GLow">
                     <h5 class="card-title text-center">
                         G2
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-GSharpMLow">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-GSharpMLow">
                     <h5 class="card-title text-center">
                         G#2
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-ASharp">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-ASharp">
                     <h5 class="card-title text-center">
                         A#3
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-CSharpM">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-CSharpM">
                     <h5 class="card-title text-center">
                         C#3
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-DSharp">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-DSharp">
                     <h5 class="card-title text-center">
                         G#4
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-C">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-C">
                     <h5 class="card-title text-center">
                         C4
                     </h5>
@@ -77,37 +77,37 @@
             </div>
             <div class="col">
                 <!-- HI KEYS -->
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-G">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-G">
                     <h5 class="card-title text-center">
                         G4
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-Em">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-Em">
                     <h5 class="card-title text-center">
                         E4
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-F">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-F">
                     <h5 class="card-title text-center">
                         F4
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-GSharpM">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-GSharpM">
                     <h5 class="card-title text-center">
                         G#5
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-GM">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-GM">
                     <h5 class="card-title text-center">
                         G5
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-A">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-A">
                     <h5 class="card-title text-center">
                         A5
                     </h5>
                 </div>
-                <div class="card m-3 pt-2 border-dark" style="width: 18rem;" id="sat-Cm">
+                <div class="card pt-2 border-dark" style="width: 18rem;" id="sat-Cm">
                     <h5 class="card-title text-center">
                         C6
                     </h5>
@@ -194,30 +194,40 @@
         <div class="row">
             <div class="col">
                 <button class="btn btn-dark" onclick="playDrums()">Start Drum Backing</button>
+            </div>
+            <div class="col">
                 <button class="btn btn-dark" onclick="stopDrums()">Stop Drums</button>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <button class="btn btn-dark" onclick="playGuitar()">Start Guitar Backing</button>
+            </div>
+            <div class="col">
                 <button class="btn btn-dark" onclick="stopGuitar()">Stop Guitar</button>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <button class="btn btn-success" onclick="playCascadeSky()">Start Cascade Sky</button>
+            </div>
+            <div class="col">
                 <button class="btn btn-success" onclick="stopCascadeSky()">Stop Cascade Sky</button>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <button class="btn btn-success" onclick="playHiLoBase()">Start Hi Lo Base</button>
+            </div>
+            <div class="col">
                 <button class="btn btn-success" onclick="stopHiLoBase()">Stop Hi Lo Base</button>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <button class="btn btn-success" onclick="playCloudlines()">Start Cloudlines</button>
+            </div>
+            <div class="col">
                 <button class="btn btn-success" onclick="stopCloudlines()">Stop Cloudlines</button>
             </div>
         </div>
@@ -251,7 +261,7 @@
     
 
     <!-- Button trigger modal -->
-    <div class="container">
+    <div class="container my-2">
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exitConfirm" onclick="pausePiano()">
             Exit Piano
         </button>
