@@ -7,6 +7,7 @@
 1. NPM
 2. Bootstrap
 3. jQuery (v 3.6.8.slim.min)
+4. sass
 
 ## Prompt
 
