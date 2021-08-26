@@ -5,8 +5,10 @@
 ##### please check package.json for version control if not listed:
 
 1. NPM
-2. Bootstrap
-3. jQuery (v 3.6.8.slim.min)
+2. parcel-bundler
+3. Bootstrap
+4. jQuery (^3.6.8.slim.min)
+5. sass
 
 ## Prompt
 
