@@ -72,3 +72,6 @@ Based on the original prompt, there is a timer that begins once the user first l
 
 ## Auto-close
 After confirming that the user wants to leave, if they click the "confirm" button within the modal, they recieve a thank you message and the entire window will auto-close. 
+
+## Functionality
+Due to the nature of the keypress event handling, this application is intended for use on desktop, not mobile or tablet. 
