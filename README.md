@@ -1,5 +1,8 @@
 # Piano Exit
 
+## Hosted on Netlify
+[![Netlify Status](https://api.netlify.com/api/v1/badges/593efe1e-4862-44fa-a0ad-80c779ea6601/deploy-status)](https://app.netlify.com/sites/piano-portal/deploys)
+
 ## Dependencies
 
 ##### please check package.json for version control if not listed:
