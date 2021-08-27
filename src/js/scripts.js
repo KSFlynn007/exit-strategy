@@ -54,7 +54,7 @@ function quitPiano()
     $('.modal-body').remove();
     $('.modal-footer').remove();
 
-    modalTitle.replaceWith($('<h1 class="goodbyeMessage w-100"> Thank you for playing! </h1>'));
+    modalTitle.replaceWith($('<h1 class="goodbyeMessage w-100" style="text-decoration: none"> Thank you for playing! </h1>'));
 
     // close window:
     setTimeout('self.close()', 1500);
